@@ -1,0 +1,304 @@
+
+   
+/* import font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+
+
+
+/* common style */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+    margin: 0;
+    padding:0;
+    position: sticky;
+}
+/* header style */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     height: 100px;
+     position: relative;
+    left: 20px;
+    top: 50px;
+
+}
+.top-flore img{
+    width: 500px;
+    height: 500px;
+}
+.hello b{
+    font-size: 1.8em;
+    
+}
+
+
+
+/* header end  */
+/* first part :start */
+.container{
+    display: flex;
+    /* margin: 0; */
+}
+.top-flore{
+    margin-left: 30px;
+    width: 50%;
+    height: 50%;
+}
+.top-flore .toptext{
+    
+    font-size: 60px;
+    color:rgb(61, 58, 58);
+
+}
+
+.top-flore p{
+    font-size: 20px;
+}
+
+.alink{
+    text-decoration: none;
+    padding: 10px;
+     background-color: rgb(167, 50, 167);
+     color: white;
+     border: 1px solid blueviolet;
+     border-radius: 7px;
+     font-size: 1.3em;
+}
+
+/* first part :end */
+
+
+
+
+/* collection stylesl */
+
+.collection-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+.course .course-banner img{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+}
+
+.course-title{
+    padding-left:20px;
+}
+.course-author{
+    padding-left: 20px;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    padding-left:20px;
+   
+}
+.course{
+    background-color: white;
+    border-radius: 10px;
+}
+.fa-arrow-righ:hover{
+    color: black;
+}
+
+.fa-star{
+    font-size: 12px;
+
+}
+.fa-star.empty{
+    color: #aeaeae;
+}
+.fa-star.gold{
+    color: rgb(139, 121, 20);
+   }
+
+.another{
+
+   display: flex;
+   align-items: flex-end;
+   justify-content: flex-end;
+   
+   margin-top: 20px;
+
+}
+.another .next-a{
+    
+    float: left;
+    text-decoration: none;
+    font-size: 30px;
+    padding-right: 90px;
+    color: purple;
+}
+.last-part{
+    margin-left: 80px;
+}
+
+.last-flore{
+    margin: 20px;
+    
+}
+/* colllection end  */
+ 
+
+/* footer adedd */
+
+.last-p{
+    position: relative;
+    
+    left: 50px;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: tomato; */
+    width:100%;
+    background-color: rgb(136, 6, 125);
+    color: white;
+}
+.footer .fab{
+    font-size: 2em;
+    padding:13px;
+
+}
+.fav{
+    position: relative;
+    left: 50px;
+}
+/* footer :end? */
+/* ---------
+Media Queries
+----------------------------------- */
+/*========-------= Mobile debices ++++++++++++++
+-------------*/
+@media only screen and (max-width:669px) {
+   .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+     height: 100px;
+ 
+
+       
+   }
+ .hello .b{
+       font-size: 20px;
+   }
+   
+  .container{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+      position: relative;
+      right: 0;
+  }
+  .courses{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+}
+    
+   .top-flore{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       align-items: center;
+    width:90%;
+    height: 100%;
+}
+.top-flore p{
+    text-align: center;
+}
+.top-flore img{
+    width: 340px;
+    height: 300px;
+}
+.top-flore .toptext{
+    font-size: 35px;
+}
+.another .next-a{
+    
+  
+    font-size: 20px;
+  padding-right: 10px;
+    color: purple;
+}
+
+
+   
+    
+}
+
+
+/*---------------- tablets devises----------------
+------------------- --------------------------*/
+@media only screen and (min-width:688px) and  (max-width:992px) {
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+         height: 100px;
+     
+    
+           
+       }
+       .header .hello{
+           font-size: 10px;
+       }
+       .courses{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+    }
+    .top-flore img{
+        width: 340px;
+        height: 300px;
+    }
+      
+        
+       .top-flore{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           text-align: center;
+           align-items: center;
+        width:100%;
+        height: 100%;
+    }
+    .top-flore p{
+        text-align: center;
+    }
+   
+    .top-flore .toptext{
+        font-size: 35px;
+    }
+    
+    
+  
+}
+/* end of the website style */
